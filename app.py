@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 # Database URL from render DONT FORGET postgresql+asyncpg://
-DATABASE_URL = f""
+DATABASE_URL = f"postgresql://course_python_db_4mil_user:gVdR8SMUZxzmmiLRf1bbHJWdylIy8PdB@dpg-csn1828gph6c73frdbp0-a.oregon-postgres.render.com/course_python_db_4mil"
 
 # Initalization SQLAlchemy
 engine = create_async_engine(DATABASE_URL, echo=True)
